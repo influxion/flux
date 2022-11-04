@@ -15,5 +15,13 @@
     "flux",
     "jordon",
     "nichols"
-  ]
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": "influxion/influxed",
+  "author": {
+    "name": "Jordon Nichols",
+    "email": "jordon@influxed.io",
+    "url": "https://influxed.io/"
+  }
 }
