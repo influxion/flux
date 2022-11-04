@@ -1,6 +1,7 @@
 {
-  "name": "flux",
+  "name": "lflux",
   "version": "1.0.0",
+  "description": "Get to know Jordon @ INFLUXED via `npx lflux`.",
   "bin": {
     "flux": "index.ts"
   }
