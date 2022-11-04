@@ -2,10 +2,12 @@
   "name": "influxed",
   "version": "2.0.2",
   "description": "Get to know Jordon @ INFLUXED via `npx influxed`.",
+  "type": "module",
   "bin": {
     "influxed": "index.js"
   },
   "dependencies": {
+    "chalk": "^5.1.2",
     "cli-welcome": "^2.2.2"
   },
   "keywords": [
