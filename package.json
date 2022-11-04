@@ -4,5 +4,8 @@
   "description": "Get to know Jordon @ INFLUXED via `npx influxed`.",
   "bin": {
     "influxed": "index.js"
+  },
+  "dependencies": {
+    "clear-any-console": "^1.16.2"
   }
 }

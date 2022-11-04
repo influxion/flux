@@ -1,4 +1,10 @@
 #!/usr/bin/env node
+
+const clearConsole = require('clear-any-console');
+
+// Cears the console
+clearConsole();
+
 console.log(`
 Jordon Nichols
 
