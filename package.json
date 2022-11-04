@@ -1,6 +1,6 @@
 {
   "name": "influxed",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Get to know Jordon @ INFLUXED via `npx influxed`.",
   "bin": {
     "influxed": "index.js"
