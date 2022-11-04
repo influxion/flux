@@ -1,0 +1,7 @@
+{
+  "name": "flux",
+  "version": "1.0.0",
+  "bin": {
+    "flux": "index.ts"
+  }
+}
