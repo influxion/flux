@@ -1,7 +1,7 @@
 {
-  "name": "lflux",
+  "name": "inf-learn",
   "version": "1.0.0",
-  "description": "Get to know Jordon @ INFLUXED via `npx lflux`.",
+  "description": "Get to know Jordon @ INFLUXED via `npx inf-learn`.",
   "bin": {
     "flux": "index.ts"
   }
