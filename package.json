@@ -1,8 +1,8 @@
 {
-  "name": "inf-learn",
+  "name": "influxed",
   "version": "1.0.0",
-  "description": "Get to know Jordon @ INFLUXED via `npx inf-learn`.",
+  "description": "Get to know Jordon @ INFLUXED via `npx influxed`.",
   "bin": {
-    "flux": "index.ts"
+    "influxed": "index.js"
   }
 }
