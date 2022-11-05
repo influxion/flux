@@ -1,4 +1,4 @@
-#!/usr/bin/env ts-node
+#!/usr/bin/env node
 import welcome from 'cli-welcome';
 import chalk from 'chalk';
 
