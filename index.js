@@ -1,9 +1,9 @@
 #!/usr/bin/env node
-import welcome from 'cli-welcome';
 import chalk from 'chalk';
+import alert from 'influxed-alerts';
 
-import pkgJSON from './package.json' assert { type: 'json' };
-import techStr from './techs.js';
+import init from './utils/init.js';
+import techs from './utils/techs.js';
 
 const log = console.log;
 const dim = chalk.dim;
@@ -12,27 +12,15 @@ const titleWhite = chalk.bold.whiteBright;
 const linkedinClr = chalk.hex(`#0077b5`).bold.inverse;
 const githubClr = chalk.hex(`#6cc644`).bold.inverse;
 
-welcome({
-  title: `Jordon Nichols`,
-  tagLine: `Howdy, nice to meet ya!`,
-  description: pkgJSON.description,
-  version: pkgJSON.version,
-  bgColor: `#6937FF`,
-  color: `#000000`,
-  bold: true,
-  clear: true,
-});
+init();
 
-log(`
-${italic(
+log(`${italic(
   `Focused on building well-architected, secure, and innovative systems for all.`
 )}
 
-
 ${titleWhite(`Working with techs like...`)}
 
-${techStr}
-
+${techs}
 
 ${titleWhite.underline(`   SOCIALS   `)}
 
@@ -41,3 +29,7 @@ ${titleWhite.underline(`   SOCIALS   `)}
 )}
 📖 ${githubClr(` Github `)}:   ${dim(`https://github.com/influxion`)}
 `);
+alert({
+  type: 'info',
+  msg: 'Check the socials!',
+});
