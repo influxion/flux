@@ -12,24 +12,26 @@ const titleWhite = chalk.bold.whiteBright;
 const linkedinClr = chalk.hex(`#0077b5`).bold.inverse;
 const githubClr = chalk.hex(`#6cc644`).bold.inverse;
 
-init();
+(async () => {
+  init();
 
-log(`${italic(
-  `Focused on building well-architected, secure, and innovative systems for all.`
-)}
-
-${titleWhite(`Working with techs like...`)}
-
-${techs}
-
-${titleWhite.underline(`   SOCIALS   `)}
-
-💡 ${linkedinClr(` LinkedIn `)}: ${dim(
-  `https://www.linkedin.com/in/jordon-nichols/`
-)}
-📖 ${githubClr(` Github `)}:   ${dim(`https://github.com/influxion`)}
-`);
-alert({
-  type: 'info',
-  msg: 'Check the socials!',
-});
+  log(`${italic(
+    `Focused on building well-architected, secure, and innovative systems for all.`
+  )}
+  
+  ${titleWhite(`Working with techs like...`)}
+  
+  ${techs}
+  
+  ${titleWhite.underline(`   SOCIALS   `)}
+  
+  💡 ${linkedinClr(` LinkedIn `)}: ${dim(
+    `https://www.linkedin.com/in/jordon-nichols/`
+  )}
+  📖 ${githubClr(` Github `)}:   ${dim(`https://github.com/influxion`)}
+  `);
+  alert({
+    type: 'info',
+    msg: 'Check the socials!',
+  });
+})();
